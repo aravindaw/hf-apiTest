@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--parallel="methods"/"false"-->
+<suite name="Test api responses" parallel="false" thread-count="1" verbose="10">
+    <test name="TC01">
+        <classes>
+            <class name="com.aravinda.app.scripts.HFAPIT1_CountryAvailability"/>
+        </classes>
+    </test>
+    <test name="TC02">
+        <classes>
+            <class name="com.aravinda.app.scripts.HFAPIT2_EachCountryResponseValidation"/>
+        </classes>
+    </test>
+    <test name="TC03">
+        <classes>
+            <class name="com.aravinda.app.scripts.HFAPIT3_VerifyInexistentCountryResponse"/>
+        </classes>
+    </test>
+    <test name="TC04">
+        <classes>
+            <class name="com.aravinda.app.scripts.HFAPIT4_AddNewCountry"/>
+        </classes>
+    </test>
+</suite>
